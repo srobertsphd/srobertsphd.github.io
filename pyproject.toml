@@ -1,0 +1,14 @@
+[project]
+name = "srobertsphd.github.io"
+version = "0.1.0"
+description = "Samantha Roberts / WorldlyCode Documentation"
+authors = [
+    {name = "Samantha Roberts"}
+]
+dependencies = [
+    "mkdocs-material==9.6.14",
+    "mkdocstrings[python]==0.29.1",
+    "pymdown-extensions==10.15",
+    "ghp-import==2.1.0",
+    "mkdocs-awesome-pages-plugin>=2.10.1",
+]
