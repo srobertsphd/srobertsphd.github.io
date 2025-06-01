@@ -132,9 +132,9 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/sprobertsphd/srobertsphd.github.io
+      link: https://srobertsphd.github.io
     # - icon: fontawesome/brands/linkedin
-    #   link: https://www.linkedin.com/in/worldlycode/
+      link: https://www.linkedin.com/in/srobertsphd/
 # extra_css:
 #   - stylesheets/extra.css
 
