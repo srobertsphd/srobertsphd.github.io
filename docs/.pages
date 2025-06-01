@@ -2,4 +2,6 @@ collapse: true
 
 nav:
   - Home: index.md
+  - Feature Cards: feature-cards-example.md
   - MkDocs: mkdocs
+  - Blog: blog

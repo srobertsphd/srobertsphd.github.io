@@ -39,6 +39,7 @@ theme:
     # - navigation.expand
     - navigation.collapsible
     - navigation.instant
+    - content.action.edit
     # - toc.integrate # toggle OFF to show the toc on the right side of the page
     - search.suggest
     - search.highlight
@@ -87,7 +88,34 @@ plugins:
             show_source: true
             show_root_heading: true
   - awesome-pages
+  - blog:
+      blog_dir: blog
+      post_dir: "{blog}/posts"
+      post_date_format: long
+      post_url_format: "{date}/{slug}"
+      pagination: true
+      pagination_per_page: 5
+      # Disable archive and categories in navigation
+      archive: false
+      categories: false
+      # Keep them accessible via URLs
+      archive_name: "Past Posts"
+      archive_date_format: "yyyy"
+      archive_url_format: "archive/{date}"
+      categories_name: "Topics"
+      categories_url_format: "topics/{slug}"
+      categories_toc: false
+      # Custom templates
+      archive_template: "blog/templates/archive.html"
+      category_template: "blog/templates/category.html"
 
+nav:
+  - Home: index.md
+  - Blog: blog/index.md
+  - MkDocs:
+    - Overview: mkdocs/index.md
+    - Feature Cards Guide: mkdocs/feature-cards-guide.md
+    - Feature Cards Examples: mkdocs/feature-cards-examples.md
 
 # nav:
 #   - Home: index.md
@@ -132,14 +160,14 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://srobertsphd.github.io
+      link: https://github.com/srobertsphd/srobertsphd.github.io
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/samantha-roberts-phd/
     - icon: fontawesome/solid/globe
       link: https://samantharoberts.com
       name: Samantha Roberts, PhD
       title: WorldlyCode LLC
-# extra_css:
-#   - stylesheets/extra.css
+extra_css:
+  - assets/stylesheets/blog-custom.css
 
 copyright: "© 2025 WorldlyCode LLC"

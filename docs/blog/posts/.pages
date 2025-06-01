@@ -1,0 +1,4 @@
+title: Posts
+arrange: date
+order_by: -meta.date
+order_reverse: false 

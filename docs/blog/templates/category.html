@@ -1,0 +1,15 @@
+{% extends "blog-meta.html" %}
+
+{% block post_title %}
+  <h1>{{ title }}</h1>
+  <a href="../.." class="blog-back-button">
+    <span class="twemoji">
+      {% include ".icons/octicons/arrow-left-24.svg" %}
+    </span> 
+    Back to Blog
+  </a>
+{% endblock %}
+
+{% block post_content %}
+  {{ content }}
+{% endblock %} 
