@@ -1,0 +1,430 @@
+/* Make content area full width */
+.md-content__inner {
+  max-width: 100% !important;
+  padding: 0 1.2rem;
+}
+
+/* Full-width cards for blog posts */
+.md-typeset .blog article {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: var(--md-default-bg-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  display: block;
+}
+
+.md-typeset .blog article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Blog post titles */
+.md-typeset .blog article h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--md-primary-fg-color);
+}
+
+.md-typeset .blog article h2 a {
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+}
+
+.md-typeset .blog article h2 a:hover {
+  text-decoration: underline;
+}
+
+/* Blog metadata styling */
+.md-typeset .blog article .metadata {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.9rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .blog article .metadata a {
+  font-weight: 500;
+  color: var(--md-accent-fg-color);
+}
+
+/* Make images full width within the card */
+.md-typeset .blog img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+/* Style the "Continue reading" button */
+.md-typeset .blog article hr + a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  margin-top: 1rem;
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color) !important;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.md-typeset .blog article hr + a:hover {
+  background-color: var(--md-primary-fg-color--dark);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Hide horizontal rule */
+.md-typeset .blog article hr {
+  display: none;
+}
+
+/* Make the blog content larger and more readable */
+.md-typeset .blog article p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Pagination styling */
+.md-typeset .blog nav.paginate {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.md-typeset .blog nav.paginate a,
+.md-typeset .blog nav.paginate span.page {
+  padding: 0.6rem 1rem;
+  margin: 0 0.3rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.md-typeset .blog nav.paginate a {
+  background-color: var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.md-typeset .blog nav.paginate a:hover {
+  background-color: var(--md-accent-fg-color--transparent);
+}
+
+.md-typeset .blog nav.paginate span.page {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+/* Make sidebar navigation cleaner */
+.md-nav--secondary .md-nav__title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.6rem 0.5rem;
+}
+
+.md-nav--secondary .md-nav__list {
+  padding-left: 0.3rem;
+}
+
+.md-nav--secondary .md-nav__item {
+  padding: 0;
+  margin: 0.1rem 0;
+}
+
+.md-nav--secondary .md-nav__link {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.md-nav--secondary .md-nav__link:hover {
+  background-color: var(--md-default-fg-color--lightest);
+}
+
+/* Improve sidebar navigation */
+.md-sidebar .md-nav__title {
+  padding: 0.8rem 0.6rem;
+  font-size: 1rem;
+}
+
+/* Adjust spacing for mobile devices */
+@media screen and (max-width: 76.1875em) {
+  .md-content__inner {
+    padding: 0 0.8rem;
+  }
+}
+
+/* Full-width blog post images */
+.md-typeset .blog img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Archive and Categories sidebar compact styling */
+.md-nav--secondary .md-nav__list .md-nav__list {
+  padding-left: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.md-sidebar .md-nav__title[for="__toc"] {
+  font-size: 0.9rem;
+}
+
+/* Feature Cards Grid Styling */
+.md-typeset .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.md-typeset .grid.cards {
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+/* Card Styling */
+.md-typeset .grid.cards > ul {
+  display: contents;
+}
+
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > li,
+.md-typeset .grid > .card {
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: transform 0.25s, box-shadow 0.25s;
+  box-shadow: var(--md-shadow-z1);
+  margin: 0;
+  list-style: none;
+}
+
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > li:hover,
+.md-typeset .grid > .card:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: var(--md-shadow-z2);
+}
+
+/* Card Separator Line */
+.md-typeset .grid.cards > ul > li > hr,
+.md-typeset .grid.cards > li > hr,
+.md-typeset .grid > .card > hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Card Icon Styling */
+.md-typeset .grid.cards > ul > li > p:first-child > .lg,
+.md-typeset .grid.cards > li > p:first-child > .lg,
+.md-typeset .grid > .card > p:first-child > .lg {
+  font-size: 2.5rem;
+  float: right;
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
+}
+
+/* Card Title Styling */
+.md-typeset .grid.cards > ul > li > p:first-child > strong,
+.md-typeset .grid.cards > li > p:first-child > strong,
+.md-typeset .grid > .card > p:first-child > strong {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.6;
+  display: block;
+  padding-right: 2.5rem;
+}
+
+/* Adjusting Card Link Styling */
+.md-typeset .grid.cards > ul > li > p:last-child,
+.md-typeset .grid.cards > li > p:last-child,
+.md-typeset .grid > .card > p:last-child {
+  margin-bottom: 0;
+}
+
+/* Icon Sizing Classes */
+.md-typeset .lg {
+  font-size: 1.5rem;
+  vertical-align: text-top;
+}
+
+.md-typeset .xl {
+  font-size: 2rem;
+  vertical-align: text-top;
+}
+
+.md-typeset .xxl {
+  font-size: 3rem;
+  vertical-align: middle;
+}
+
+/* Icon Positioning Classes */
+.md-typeset .middle {
+  vertical-align: middle;
+}
+
+.md-typeset .center {
+  text-align: center;
+}
+
+/* Blog index page styling - separate user content from plugin content */
+.md-typeset .blog > .index-content {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 2rem;
+}
+
+/* Blog index separator */
+.md-typeset .blog > .index-content + .post:before,
+.md-typeset .blog > .index-content + h2:before {
+  content: "Recent Posts";
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  color: var(--md-primary-fg-color);
+}
+
+/* Hide duplicate Recent Posts heading if the plugin creates one */
+.md-typeset .blog > .index-content + h2 {
+  display: none;
+}
+
+/* Style for auto-generated blog posts on index */
+.md-typeset .blog > .post {
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--md-default-bg-color);
+  box-shadow: var(--md-shadow-z1);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.md-typeset .blog > .post:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--md-shadow-z2);
+}
+
+/* Improve blog card layout */
+.md-typeset .blog .post h2 {
+  margin-top: 0;
+}
+
+/* Change the post grid to 2-column layout on larger screens */
+@media screen and (min-width: 960px) {
+  .md-typeset .blog .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  /* Reset hover animation for post grid items to avoid layout shifts */
+  .md-typeset .blog .posts .post:hover {
+    transform: translateY(-3px);
+  }
+}
+
+/* Category and Archive Page Styling */
+
+/* Category Title */
+.md-typeset .blog h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--md-primary-fg-color);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.5rem;
+}
+
+/* Back button for category and archive pages */
+.md-typeset .blog .blog-back-button {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color) !important;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.md-typeset .blog .blog-back-button:hover {
+  background-color: var(--md-primary-fg-color--dark);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Category page cards */
+.md-typeset .blog .category .post {
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Archive list styling */
+.md-typeset .blog .archive ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 2rem;
+}
+
+.md-typeset .blog .archive ul li {
+  margin-bottom: 0.5rem;
+}
+
+.md-typeset .blog .archive h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: var(--md-primary-fg-color);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.5rem;
+}
+
+/* Categories list styling */
+.md-typeset .blog .categories ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.md-typeset .blog .categories ul li {
+  margin-bottom: 0.5rem;
+}
+
+.md-typeset .blog .categories ul li a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.md-typeset .blog .categories ul li a:hover {
+  background-color: var(--md-accent-fg-color--transparent);
+  transform: translateY(-2px);
+} 
