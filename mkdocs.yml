@@ -86,11 +86,11 @@ plugins:
             docstring_style: google
             show_source: true
             show_root_heading: true
-#  - awesome-pages
+  - awesome-pages
 
 
-nav:
-  - Home: index.md
+# nav:
+#   - Home: index.md
 #   - Signup:
 #     - Signup Overview: signup/index.md
 #   - Lab Policies:

@@ -1,0 +1,5 @@
+title: MkDocs
+nav:
+  - index.md
+  - Deploy to GitHub Domain: deploy-guide.md
+  

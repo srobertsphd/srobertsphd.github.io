@@ -1,0 +1,5 @@
+collapse: true
+
+nav:
+  - Home: index.md
+  - MkDocs: mkdocs
